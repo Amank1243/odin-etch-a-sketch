@@ -5,7 +5,7 @@ let square = document.createElement("div");
 square.className = "square";
 square.style.height = "50px";
 square.style.width = "50px";
-square.style.border = "2px solid black";
+square.style.border = "1px solid black";
 
 let gridSize = 16 * 16;
 function createGrid() {
@@ -35,7 +35,7 @@ button.addEventListener("click", () => {
     }
     gridSize = num * num;
     
-    newSize = (864/num) - 4;
+    newSize = (832/num) - 2;
     square.style.height = newSize + "px";
     square.style.width = newSize + "px";
 
